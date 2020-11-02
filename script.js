@@ -1,4 +1,15 @@
 jQuery(document).ready(function( $ ){
+console.log('test');
+var formFeedBack = $('#form');
+$(window).scroll(function() {
+  var windowH = $(window).scrollTop() + $(window).height();
+  var documentH = $(document).height();
+  console.log(windowH);
+  console.log(documentH);
+  if(windowH==documentH-34) {
+       formFeedBack.css('display','block');
+   }
+});
 
 //buergerMenu
 var iconeBurger = $('#iconebm');

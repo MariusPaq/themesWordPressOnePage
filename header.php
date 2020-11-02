@@ -10,6 +10,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <header class="header">
     <div class="navbar">
       <ul id="menu">
