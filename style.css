@@ -8,17 +8,16 @@ Version: 1.0
 html{scroll-behavior: smooth;overflow-x: hidden;}
 body{background-image: url(img/background.png);margin: 0;font-family: 'Roboto', sans-serif;color: #5f6368;}
 h1{margin-top: 50px;margin-bottom: 50px;font-family: 'Oswald', sans-serif;color: black;}
-.textD{text-decoration: none;}
+.textD{text-decoration: none;color: black;}
+.textD:hover{color: #FF8C00;}
 .containerPers{width: 1140px;margin-left: auto;margin-right: auto;}
 .menu{position: fixed;top: 0px;}
 .admin-bar .menu {top: 32px;}
-
 #logo{width: 70px;margin-top: 95px;}
 #iconebm{width: 30px;height: 30px;margin: auto;background: url('img/iconbm.png');background-size: 100%;background-repeat: no-repeat;}
 .burgerMenu{display: none;}
 .burgerMenu li{display: none;font-size: smaller;}
 .burgerMenu ul{padding: 0px!important;list-style: none;}
-
 .navbar{background-color: #FF8C00;height: 100px;width: 1200px;margin-left: auto;margin-right: auto;border-radius: 30px;margin-top: -50px;box-shadow: 0 0 10px black;}
 #menu{padding-top: 55px;}
 #menu li{display: inline;}
@@ -26,36 +25,28 @@ h1{margin-top: 50px;margin-bottom: 50px;font-family: 'Oswald', sans-serif;color:
 #freins{margin-left: 50px;}
 #chiffres{margin-left: 100px;}
 #acces{margin-left: 350px;}
-
 .navCircle{text-align: center;width: 200px;height: 200px;border-radius: 100px;margin-left: auto;margin-right: auto;margin-top: -150px;background-color: white;z-index: 100;box-shadow: 0 0 10px black;}
 .wp-image-152{width: 500px;height: 500px;margin-left: 280px;margin-top: 50px;box-shadow: 0 0 10px black;}
-
 .cercle{width: 50px;height: 50px;border-radius: 25px;margin: auto;margin-top: 100px;margin-bottom: 100px;background-image: url("img/logo.png");box-shadow: 0 0 10px black;}
 #title{text-align: center;}
-
 footer{height: 100px;box-shadow: 0 0 20px black;}
 .paralax{background-image: url("img/backgroundFooter.png");}
 .paralax2{background-image: url("img/arrierefondHF.png");}
 .paralaxC{background-attachment: fixed;
 background-position: center;background-repeat: no-repeat;background-size: cover;}
-
-.navbarFooter{width: 750px;margin-left: auto;margin-right: auto;right: 20px;}
-#menuFooter{padding-top: 45px;}
+.navbarFooter{width: 100%;margin-left: auto;margin-right: auto;right: 20px;}
+#menuFooter{padding-top: 45px;text-align: center;}
 #menuFooter li{display: inline;}
 #menuFooter li a{text-decoration: none;color: white;font-weight: bold;margin-left: 20px;margin-right: 20px;text-shadow: 0 0 5px white;}
-
 #btn-Up{width: 50px;height: 50px;position: fixed;bottom: 20px;right: 30px;z-index: 99;
   transition: background-color .3s,opacity .5s, visibility .5s;}
 .show{opacity: 1!important;visibility:visible!important;}
 .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);transition: 0.5s;text-align: center;background-size: 200% auto;border-radius: 25px;display: block;
 box-shadow: 0 0 7px black;color: white;text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 opacity: 0;visibility: hidden;}
-
 .btn-grad:hover{background-position: right center;text-decoration: none;color: white;}
 
-
 @media all and (max-width:1210px) {
-
   .navbar{width: 1000px;}
   #freins{margin-left: 20px;}
   #chiffres{margin-left: 70px;}
@@ -65,7 +56,6 @@ opacity: 0;visibility: hidden;}
 }
 
 @media all and (max-width:1010px) {
-
   .navbar{width: 800px;}
   #freins{margin-left: 0px;}
   #chiffres{margin-left: 10px;}
@@ -75,17 +65,21 @@ opacity: 0;visibility: hidden;}
 }
 
 @media all and (max-width:810px) {
-
   .navbar{width: 60%;}
   .burgerMenu{display: block;}
   .containerPers{width: 500px;}
   .wp-image-152{margin-left: 0px;}
   #logo{width: 30px;margin-top: 95px;}
-  #menu li{display: none;}
   #chiffresimg{background: url('img/visuel-mobile.png');width: 380px;height: 650px;background-repeat: no-repeat;margin-left: auto;margin-right: auto;}
-  .wp-image-158{display: none;}
-  #menuFooter{display: none;}
+  .wp-image-158,#menu li{display: none;}
+  #menuFooter{font-size: 8px!important;}
 }
+
+@media all and (max-width:550px) {
+  #menuFooter{font-size: 7px!important;}
+  #btn-Up{display: none;}
+}
+
 
 @media all and (max-width:510px) {
   .containerPers{width: 450px;}
@@ -95,4 +89,8 @@ opacity: 0;visibility: hidden;}
   .containerPers{width: 350px;}
   .wp-image-152{height: 270px;}
   #chiffresimg{margin-left: -15px;}
+}
+
+@media all and (max-height:700px){
+  #form{display: none!important;}
 }
